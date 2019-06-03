@@ -25,7 +25,7 @@ body {
 }
 
 .video-section {
-  background: green;
+  
   flex: 2;
 }
 
@@ -106,4 +106,7 @@ body {
 .logo-text {
   font-size: 18px;
   font-weight: 400;
+}
+.view-count{
+  color: rgba(25, 25, 25, 0.65);
 }
