@@ -4,6 +4,7 @@
 
 body {
   font-family: roboto;
+  margin: 0;
 }
 
 .container {
@@ -22,6 +23,8 @@ body {
   justify-content: space-between;
   height: 56px;
   align-items: center;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 .video-section {
@@ -40,9 +43,12 @@ body {
 }
 
 .menu-button {
+  padding: 0;
   border-radius: 100%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  margin-left: 1px;
+  margin-right: 1px;
   background: none;
   border: none;
   outline: none;
@@ -62,16 +68,17 @@ body {
 .nav-button-list {
   display: flex;
   align-items: center;
+  margin-right: 15px;
 }
 
 .nav-buttons-list-item {
   color: rgba(25, 25, 25, 0.65);
-  margin: 0px 10px 0px 0px;
 }
 
 .youtube-logo {
-  color: red;
-  margin-right: 2px;
+  width: 125px;
+  height: 56px;
+  cursor: pointer;
 }
 
 .search-button {
@@ -91,6 +98,7 @@ body {
   border: 1px solid #d3d3d3;
   border-right-color: none;
   padding: 10px;
+  font-size: 16px;
 }
 
 .search-container {
@@ -103,10 +111,6 @@ body {
   outline: none;
 }
 
-.logo-text {
-  font-size: 18px;
-  font-weight: 400;
-}
 .view-count {
   color: rgba(25, 25, 25, 0.65);
 }
@@ -129,6 +133,7 @@ body {
 
 .video-interaction-buttons {
   display: flex;
+  align-items: center;
 }
 
 .subtitle {
@@ -144,9 +149,8 @@ body {
 }
 
 .show-more {
-  margin-left: 55px;
-  margin-top: 25px;
   background: none;
+  margin-top: 20px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -162,24 +166,31 @@ body {
   font-size: 14px;
   font-weight: 600;
   font-family: roboto;
+  cursor: pointer;
 }
 
-.add-comment{
+.add-comment {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  
-
+  align-items: center;
 }
-.comment-input{
-  border-top:none;
-  border-left:none;
-  border-right: none; 
+.comment-input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
   cursor: text;
   flex: 1;
+  outline: none;
+  font-size: 16px;
+  margin-left: 20px;
 }
-.sort-menu-button{
-  display:flex; 
+
+.comment-input:focus {
+  border-color: rgba(25, 25, 25, 0.65);
+}
+
+.sort-menu-button {
+  display: flex;
   border-radius: 100%;
   width: 100%;
   height: 50px;
@@ -187,14 +198,29 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-
 }
-.comment-count{
+.comment-count {
   width: 100%;
+  margin: 0;
 }
-hr{
+hr {
   border: 0;
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu-logo {
+  display: flex;
+  align-items: center;
+}
+
+.video-interaction-section {
+  margin-right: 20px;
+}
+
+.sort-comments {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
 }

@@ -10,16 +10,24 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"
     />
 
-    <title>Youtube</title>
+    <title>YouTube</title>
   </head>
   <body>
     <div class="container">
       <nav class="navbar">
-        <button class="menu-button"><i class="fas fa-bars fa-lg "></i></button>
-        <button class="logo-section logo-button">
-          <i class="fab fa-youtube youtube-logo fa-3x"></i>
-          <p class="logo-text">Youtube</p>
-        </button>
+        <div class="menu-logo">
+          <button class="menu-button" style="margin-left: 10px;">
+            <i class="fas fa-bars fa-lg "></i>
+          </button>
+          <button class="logo-section logo-button">
+            <img
+              class="youtube-logo"
+              src="./imgs/youtube-logo-since-2017.jpg"
+              alt=""
+            />
+          </button>
+        </div>
+
         <div class="search-container">
           <input class="search-input" type="text" placeholder="Search" />
           <button class="search-button"><i class="fas fa-search"></i></button>
@@ -47,54 +55,59 @@
       </nav>
       <div class="content">
         <section class="video-section">
+          <!-- Youtube Video Section -->
           <div>
             <div>
-              <iframe
-                style=" min-height: -webkit-fill-available; height: auto; width: 97%;"
-                src="https://www.youtube.com/embed/ZnuwB35GYMY"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+              <div>
+                <iframe
+                  style=" min-height: -webkit-fill-available; height: auto; width: 97%;"
+                  src="https://www.youtube.com/embed/ZnuwB35GYMY"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
+          </div>
 
+          <!-- Video interaction Section -->
+          <div class="video-interaction-section">
             <div class="video-details">
               <p class="video-title">How To Embed A YouTube Video</p>
               <div class="subtitle">
                 <p class="video-views">220,582 views</p>
                 <div class="video-interaction-buttons">
-                  <button
-                    class="menu-button"
-                    style="display:flex;margin: 0 10px"
-                  >
-                    <i class="fas fa-thumbs-up nav-buttons-list-item fa-lg"></i
-                    >583
-                  </button>
-                  <button
-                    style="display:flex; margin: 0 10px"
-                    class="menu-button"
-                  >
-                    <i class="fas fa-thumbs-down nav-buttons-list-item fa-lg"
-                      >73</i
-                    >
-                  </button>
-                  <button
-                    class="menu-button"
-                    style="display:flex;margin: 0 10px"
-                  >
-                    <i class="fas fa-share nav-buttons-list-item fa-lg"></i
-                    >SHARE
-                  </button>
-                  <button
-                    class="menu-button"
-                    style="display:flex;margin: 0 30px"
-                  >
-                    <i class="fas fa-bars nav-buttons-list-item fa-lg"></i>SAVE
-                  </button>
-                  <button
-                    class="menu-button"
-                    style="display:flex;margin: 0 10px"
-                  >
+                  <div style="display: flex; align-items: center;">
+                    <button class="menu-button">
+                      <i
+                        class="fas fa-thumbs-up nav-buttons-list-item fa-lg"
+                      ></i>
+                    </button>
+                    <p style="margin: 0 5px;">583</p>
+                  </div>
+                  <div style="display: flex; align-items: center;">
+                    <button class="menu-button">
+                      <i
+                        class="fas fa-thumbs-down nav-buttons-list-item fa-lg"
+                      ></i>
+                    </button>
+                    <p style="margin: 0 5px;">73</p>
+                  </div>
+                  <div style="display: flex; align-items: center;">
+                    <button class="menu-button">
+                      <i class="fas fa-share nav-buttons-list-item fa-lg"></i>
+                    </button>
+                    <p style="margin: 0 5px;">SHARE</p>
+                  </div>
+
+                  <div style="display: flex; align-items: center;">
+                    <button class="menu-button">
+                      <i class="fas fa-bars nav-buttons-list-item fa-lg"></i>
+                    </button>
+                    <p style="margin: 0 5px;">SAVE</p>
+                  </div>
+
+                  <button class="menu-button">
                     <i
                       class="fas fa-ellipsis-h nav-buttons-list-item fa-lg"
                     ></i>
@@ -103,6 +116,8 @@
               </div>
               <hr />
             </div>
+
+            <!-- Profile Info -->
             <div class="profile-info">
               <div style="display:flex">
                 <img
@@ -111,38 +126,47 @@
                   alt=""
                 />
                 <div>
-                  <p style="font-weight: 600; line-height:0.5">Techoist</p>
                   <p
-                    style="padding: 0;line-height:0.5 ;margin: 0;color: #9b9b9b"
+                    style="margin-left: 10px;font-weight: 600; line-height:0.5; "
+                  >
+                    Techoist
+                  </p>
+                  <p
+                    style="font-size: 13px;margin-left: 10px;padding: 0;line-height:0.5 ;color: #9b9b9b"
                   >
                     Published on Mar 15, 2013
                   </p>
+                  <button class="show-more">SHOW MORE</button>
                 </div>
               </div>
               <div>
                 <button class="subscribe">SUBSCRIBE 19K</button>
               </div>
             </div>
-            <button class="show-more">SHOW MORE</button>
 
             <hr />
             <div class="comments">
-              <div class='sort-comments'>
-                <h2 class='comment-count'>0 Comments</h2>
+              <div class="sort-comments">
+                <p class="comment-count">0 Comments</p>
                 <button class="sort-menu-button">
-                  <i class="fas fa-stream"></i>SORT BY</button>
+                  <i class="fas fa-stream"></i>SORT BY
+                </button>
               </div>
-            <div class='add-comment'>  
-              <img
-                class="profile nav-buttons-list-item"
-                src="https://placeimg.com/100/100/people"
-                alt=""
-              />
-              <input class='comment-input' placeholder="Add a public comment..." />
+              <div class="add-comment">
+                <img
+                  class="profile nav-buttons-list-item"
+                  src="https://placeimg.com/100/100/people"
+                  alt=""
+                />
+                <input
+                  class="comment-input"
+                  placeholder="Add a public comment..."
+                />
               </div>
             </div>
           </div>
         </section>
+
         <section class="video-sugesstions">The side Panel section</section>
       </div>
     </div>
