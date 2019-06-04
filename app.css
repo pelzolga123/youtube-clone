@@ -244,6 +244,7 @@ hr {
 }
 .video-card {
   margin-top: 10px;
+  margin-right: 50px;
   justify-content: center;
   cursor: pointer;
 }
@@ -264,6 +265,7 @@ hr {
 .text {
   margin: 0;
   padding: 0;
+  width: 80%;
 }
 
 .video-description-title {
