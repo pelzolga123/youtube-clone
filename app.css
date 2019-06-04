@@ -163,10 +163,7 @@ body {
   font-weight: 600;
   font-family: roboto;
 }
-.sort-comments{
-  display: flex;
-  align-items: baseline;
-}
+
 .add-comment{
   display: flex;
   justify-content: space-between;
