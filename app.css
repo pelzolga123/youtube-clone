@@ -17,6 +17,12 @@ body {
   flex-direction: row;
   height: 500px;
 }
+iframe{
+  min-height: -webkit-fill-available; 
+  height: auto; 
+  width: 97%;
+  border: none;
+}
 
 .navbar {
   display: flex;
@@ -95,7 +101,6 @@ body {
   height: 32px;
   width: 575px;
   border: 1px solid #d3d3d3;
-  border-right-color: none;
   padding: 10px;
   font-size: 16px;
 }
