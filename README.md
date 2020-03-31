@@ -2,7 +2,7 @@
 <img src="https://i.ibb.co/RBPRy3c/Screenshot-from-2020-03-16-17-19-57.png" alt="Screenshot-from-2020-03-16-17-19-57" border="0">
 
 ## About The Project
-This is a clone of YouTube page. Webpage contains embedded video, images and thumbnails.
+This is a clone of the YouTube page. The webpage contains an embedded video, images, and thumbnails.
 
 ## Live version
 [Youtube clone](https://rawcdn.githack.com/oahmaro/youtube-clone/8cf28ab163694d166dad1be312a583a73b875893/index.html)
@@ -10,6 +10,14 @@ This is a clone of YouTube page. Webpage contains embedded video, images and thu
 ### Built With
 * HTML5
 * CSS
+
+### Development
+
+* Clone project
+```
+git clone https://github.com/pelzolga123/youtube-clone.git
+```
+* Open `index.html` file with a browser.
 
 ## Authors
 
